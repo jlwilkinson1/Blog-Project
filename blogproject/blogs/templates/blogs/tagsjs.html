@@ -1,0 +1,12 @@
+{% load static %}
+<html>
+    <head>
+    {% include '_menu.html' %}
+    </head>
+<h>js</h>
+{% include '_menu.html' %}
+{% for t in this_list %}
+{{ t.post_title }}
+{% endfor %}
+{{word}}
+</html>
