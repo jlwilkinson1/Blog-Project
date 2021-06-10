@@ -9,15 +9,18 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Clean Blog - Start Bootstrap Theme</title>
+  <title>Josephs Blog</title>
 
   <!-- Bootstrap core CSS -->
   <link href="{% static 'blogs/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
   <link href="{% static 'blogs/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
   <link href="{% static 'blogs/css/clean-blog.min.css' %}" rel="stylesheet">
@@ -27,14 +30,14 @@
 <body>
   {% include '_menu.html' %}
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('{%static "blogs/img/home-bg.jpg" %}')">
+  <header class="masthead" style="background-image: url('{%static " blogs/img/home-bg.jpg" %}')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>My First App</h1>
-            <span class="subheading">A Blog by Joseph</span>
+            <h1>My Blog</h1>
+            <span class="subheading">A Blog by Joseph Wilkinson</span>
           </div>
         </div>
       </div>
@@ -57,14 +60,11 @@
           </a>
           <p class="post-meta">Posted by
             <a href="#">{{post.post_author}}</a>
-            {{post.post_date}} | {{post.post_time}}</p>
+            {{post.post_date}} | {{post.post_time}}
+          </p>
         </div>
         <hr>
         {% endfor %}
-        <!-- Pager -->
-        <div class="clearfix">
-          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
-        </div>
       </div>
     </div>
   </div>
